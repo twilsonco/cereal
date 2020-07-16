@@ -101,6 +101,9 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     gpsMalfunction @94;
     processNotRunning @95;
     dashcamMode @96;
+    preKeepHandsOnWheel @97;
+    promptKeepHandsOnWheel @98;
+    keepHandsOnWheel @99;
 
     radarCanErrorDEPRECATED @15;
     radarCommIssueDEPRECATED @67;
