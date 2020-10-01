@@ -753,6 +753,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
     mpc3 @3;
     model @4;
     turn @5;
+    limit @6;
   }
 
   # deprecated
