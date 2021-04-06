@@ -752,6 +752,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
 
   processingDelay @29 :Float32;
   speedLimitControlState @32 :ControlsState.SpeedLimitControlState; 
+  speedLimit @33 :Float32;
 
   distToTurn @34 :Float32;
 
