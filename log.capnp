@@ -518,6 +518,9 @@ struct ControlsState @0x97ff69c53601abf1 {
   cumLagMs @15 :Float32;
   canErrorCounter @57 :UInt32;
 
+  # turn control
+  distToTurn @60 :Float32;
+
   lateralControlState :union {
     indiState @52 :LateralINDIState;
     pidState @53 :LateralPIDState;
@@ -737,6 +740,8 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   longitudinalPlanSource @15 :LongitudinalPlanSource;
 
   processingDelay @29 :Float32;
+
+  distToTurn @34 :Float32;
 
   enum LongitudinalPlanSource {
     cruise @0;
