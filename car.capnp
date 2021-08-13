@@ -109,6 +109,9 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     wideRoadCameraError @102;
     localizerMalfunction @103;
     highCpuUsage @105;
+    preKeepHandsOnWheel @106;
+    promptKeepHandsOnWheel @107;
+    keepHandsOnWheel @108;
 
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
