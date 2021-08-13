@@ -811,6 +811,8 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   accels @32 :List(Float32);
   speeds @33 :List(Float32);
   jerks @34 :List(Float32);
+  visionTurnControllerState @35 :VisionTurnControllerState;
+  visionTurnSpeed @36 :Float32;
 
   enum LongitudinalPlanSource {
     cruise @0;
@@ -818,6 +820,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
     lead1 @2;
     lead2 @3;
     e2e @4;
+    turn @5;
   }
 
   # deprecated
@@ -853,6 +856,13 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
     x @0 :List(Float32);
     y @1 :List(Float32);
   }
+
+  enum VisionTurnControllerState { 
+    disabled @0; # No predicted substancial turn on vision range or feature disabled.
+    entering @1; # A subsantial turn is predicted ahead, adapting speed to turn confort levels.
+    turning @2; # Actively turning. Managing acceleration to provide a roll on turn feeling.
+    leaving @3; # Road ahead straightens. Start to allow positive acceleration.
+  }
 }
 
 struct LateralPlan @0xe1e9318e2ae8b51e {
@@ -861,6 +871,8 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
   rProb @7 :Float32;
   dPathPoints @20 :List(Float32);
   dProb @21 :Float32;
+  dPathWLinesX @29 :List(Float32);
+  dPathWLinesY @30 :List(Float32);
 
   mpcSolutionValid @9 :Bool;
   desire @17 :Desire;
