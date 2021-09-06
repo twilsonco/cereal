@@ -114,6 +114,8 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     keepHandsOnWheel @108;
     speedLimitActive @109;
     speedLimitValueChange @110;
+    
+    autoHoldActivated @111;
 
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
@@ -185,6 +187,8 @@ struct CarState {
   leftBlinker @20 :Bool;
   rightBlinker @21 :Bool;
   genericToggle @23 :Bool;
+  distanceToggle @37 :Float32;
+  laneDepartureToggle @38 :Bool;
 
   # lock info
   doorOpen @24 :Bool;
@@ -195,7 +199,8 @@ struct CarState {
   clutchPressed @28 :Bool;
   
   readdistancelines @39 :Float32;
-  lkMode @38 :Bool;
+  lkMode @40 :Bool;
+  engineRPM @41 :Float32;
 
   # which packets this state came from
   canMonoTimes @12: List(UInt64);
@@ -203,6 +208,8 @@ struct CarState {
   # blindspot sensors
   leftBlindspot @33 :Bool; # Is there something blocking the left lane change
   rightBlindspot @34 :Bool; # Is there something blocking the right lane change
+  
+  autoHoldActivated @42 :Bool;
 
   struct WheelSpeeds {
     # optional wheel speeds
@@ -346,6 +353,7 @@ struct CarControl {
       seatbeltUnbuckled @5;
       speedTooHigh @6;
       ldw @7;
+      autoHoldActivated @8;
     }
 
     enum AudibleAlert {
