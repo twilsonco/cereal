@@ -187,8 +187,8 @@ struct CarState {
   leftBlinker @20 :Bool;
   rightBlinker @21 :Bool;
   genericToggle @23 :Bool;
-  distanceToggle @37 :Float32;
-  laneDepartureToggle @38 :Bool;
+  distanceToggle @38 :Float32;
+  laneDepartureToggle @39 :Bool;
 
   # lock info
   doorOpen @24 :Bool;
@@ -198,9 +198,9 @@ struct CarState {
   # clutch (manual transmission only)
   clutchPressed @28 :Bool;
   
-  readdistancelines @39 :Float32;
-  lkMode @40 :Bool;
-  engineRPM @41 :Float32;
+  readdistancelines @40 :Float32;
+  lkMode @41 :Bool;
+  engineRPM @42 :Float32;
 
   # which packets this state came from
   canMonoTimes @12: List(UInt64);
@@ -209,7 +209,7 @@ struct CarState {
   leftBlindspot @33 :Bool; # Is there something blocking the left lane change
   rightBlindspot @34 :Bool; # Is there something blocking the right lane change
   
-  autoHoldActivated @42 :Bool;
+  autoHoldActivated @43 :Bool;
 
   struct WheelSpeeds {
     # optional wheel speeds
