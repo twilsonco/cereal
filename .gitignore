@@ -19,3 +19,4 @@ services.h
 libcereal_shared.*
 .mypy_cache/
 catch2/
+*.DS_Store
