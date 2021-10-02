@@ -119,7 +119,6 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     
     blinkerSteeringPaused @112;
     pauseLongOnGasPress @113;
-    coastOverSpeedBraking @114;
 
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
@@ -165,6 +164,7 @@ struct CarState {
   # brake pedal, 0.0-1.0
   brake @5 :Float32;      # this is user pedal only
   brakePressed @6 :Bool;  # this is user pedal only
+  frictionBrakePercent @44 :UInt64; # amount of brake being applied by OP
 
   # steering wheel
   steeringAngleDeg @7 :Float32;
