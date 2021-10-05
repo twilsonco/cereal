@@ -164,7 +164,7 @@ struct CarState {
   # brake pedal, 0.0-1.0
   brake @5 :Float32;      # this is user pedal only
   brakePressed @6 :Bool;  # this is user pedal only
-  frictionBrakePercent @44 :UInt64; # amount of brake being applied by OP
+  frictionBrakePercent @44 :Int64; # amount of brake being applied by OP
 
   # steering wheel
   steeringAngleDeg @7 :Float32;
