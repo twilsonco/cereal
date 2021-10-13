@@ -119,6 +119,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     
     blinkerSteeringPaused @112;
     pauseLongOnGasPress @113;
+    stoppedWaitForGas @114;
 
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
