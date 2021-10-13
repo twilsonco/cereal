@@ -446,7 +446,6 @@ struct CarParams {
   startAccel @32 :Float32; # Required acceleraton to overcome creep braking
   steerRateCost @33 :Float32; # Lateral MPC cost on steering rate
   steerControlType @34 :SteerControlType;
-  steerFunctionForm @59 :SteerFunctionForm;
   radarOffCan @35 :Bool; # True when radar objects aren't visible on CAN
   minSpeedCan @51 :Float32; # Minimum vehicle speed from CAN (below this value drops to 0)
   stoppingDecelRate @52 :Float32; # m/s^2/s while trying to stop
@@ -548,12 +547,6 @@ struct CarParams {
   enum SteerControlType {
     torque @0;
     angle @1;
-  }
-  
-  enum SteerFunctionForm {
-    linear @0;
-    quad @1;
-    sigmoid @2;
   }
 
   enum TransmissionType {
