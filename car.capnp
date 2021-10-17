@@ -168,6 +168,7 @@ struct CarState {
   frictionBrakePercent @44 :Int64; # amount of brake being applied by OP
   
   onePedalModeActive @45 :Bool; # to change max speed to one-peda icon
+  onePedalBrakeMode @46 :Int64; # level of braking applied affects color of one-pedal icon
 
   # steering wheel
   steeringAngleDeg @7 :Float32;
