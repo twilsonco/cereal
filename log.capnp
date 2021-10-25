@@ -800,6 +800,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   leadV @47 :Float32;
   desiredFollowDistance @48 :Float32;
   leadDistCost @49 :Float32;
+  leadAccelCost @51 :Float32;
   stoppingDistance @50 :Float32;
   fcw @8 :Bool;
   longitudinalPlanSource @15 :LongitudinalPlanSource;
