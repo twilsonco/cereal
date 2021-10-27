@@ -172,6 +172,7 @@ struct CarState {
   onePedalModeActive @45 :Bool; # to change max speed to one-peda icon
   onePedalBrakeMode @46 :Int64; # level of braking applied affects color of one-pedal icon
   coastOnePedalModeActive @47 :Bool; # level of braking applied affects color of one-pedal icon
+  coastingActive @48 :Bool; # draw line through brake indicator when coasting and OP has long control
 
   # steering wheel
   steeringAngleDeg @7 :Float32;
