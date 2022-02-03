@@ -175,9 +175,9 @@ struct CarState {
   coastingActive @48 :Bool; # show "+" on max speed when coasting active
   pitch @49 :Float32; # vehicle pitch in radians
   
-  hvbVoltage @50 :Float32; # high voltage battery voltage ev's only
-  hvbCurrent @51 :Float32;
-  hvbWattage @52 :Float32;
+  hvbVoltage @51 :Float32; # high voltage battery voltage ev's only
+  hvbCurrent @52 :Float32;
+  hvbWattage @53 :Float32;
   
   # steering wheel
   steeringAngleDeg @7 :Float32;
