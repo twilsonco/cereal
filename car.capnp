@@ -179,6 +179,8 @@ struct CarState {
   hvbCurrent @52 :Float32;
   hvbWattage @53 :Float32;
   
+  secondsStopped @54 :Int64;
+  
   # steering wheel
   steeringAngleDeg @7 :Float32;
   steeringAngleOffsetDeg @37 :Float32; # Offset betweens sensors in case there multiple
