@@ -807,6 +807,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   processingDelay @29 :Float32;
   
   dynamicFollowLevel @52 :Float32;
+  secondsStopped @53 :Int64;
 
   # desired speed/accel/jerk over next 2.5s
   accels @32 :List(Float32);
