@@ -466,8 +466,11 @@ struct CarParams {
   stoppingDecelRate @52 :Float32; # m/s^2/s while trying to stop
   startingAccelRate @53 :Float32; # m/s^2/s while trying to start
 
+  longitudinalActuatorDelayLowerBound @59 :Float32; # Gas/Brake actuator delay in seconds
+  longitudinalActuatorDelayUpperBound @60 :Float32; # Gas/Brake actuator delay in seconds
+
   steerActuatorDelay @36 :Float32; # Steering wheel actuator delay in seconds
-  longitudinalActuatorDelay @58 :Float32; # Gas/Brake actuator delay in seconds
+  longitudinalActuatorDelayDEPRECATED @58 :Float32; # Gas/Brake actuator delay in seconds
   openpilotLongitudinalControl @37 :Bool; # is openpilot doing the longitudinal control?
   carVin @38 :Text; # VIN number queried during fingerprinting
   dashcamOnly @41: Bool;
@@ -501,6 +504,7 @@ struct CarParams {
     kiV @3 :List(Float32);
     kdBP @4 :List(Float32) = [0.];
     kdV @5 :List(Float32) = [0.];
+    kf @8 :Float32;
     deadzoneBP @6 :List(Float32);
     deadzoneV @7 :List(Float32);
   }
