@@ -815,6 +815,9 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   jerks @34 :List(Float32);
   visionTurnControllerState @35 :VisionTurnControllerState;
   visionTurnSpeed @36 :Float32;
+  visionCurrentLateralAcceleration @54 :Float32;
+  visionMaxVForCurrentCurvature @55 :Float32;
+  visionMaxPredictedLateralAcceleration @56 :Float32;
 
   speedLimitControlState @37 :SpeedLimitControlState; 
   speedLimit @38 :Float32;
