@@ -514,8 +514,9 @@ struct CarParams {
     useSteeringAngle @0 :Bool;
     kp @1 :Float32;
     ki @2 :Float32;
-    friction @3 :Float32;
-    kf @4 :Float32;
+    kd @3 :Float32;
+    friction @4 :Float32;
+    kf @5 :Float32;
   }
 
   struct LateralINDITuning {
