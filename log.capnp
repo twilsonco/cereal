@@ -607,9 +607,10 @@ struct ControlsState @0x97ff69c53601abf1 {
     angleError @3 :Float32;
     p @4 :Float32;
     i @5 :Float32;
-    f @6 :Float32;
-    output @7 :Float32;
-    saturated @8 :Bool;
+    d @6 :Float32;
+    f @7 :Float32;
+    output @8 :Float32;
+    saturated @9 :Bool;
    }
 
   struct LateralTorqueState {
