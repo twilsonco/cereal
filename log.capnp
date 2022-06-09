@@ -835,6 +835,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   visionCurrentLateralAccelerationNoRoll @57 :Float32;
   visionMaxPredictedRollCompensation @58 :Float32;
   visionMaxPredictedLateralAccelerationDistance @59 :Float32;
+  visionMaxPredictedCurvature @60 :Float32;
 
   speedLimitControlState @37 :SpeedLimitControlState; 
   speedLimit @38 :Float32;
