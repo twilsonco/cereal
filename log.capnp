@@ -836,6 +836,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   visionMaxPredictedRollCompensation @58 :Float32;
   visionMaxPredictedLateralAccelerationDistance @59 :Float32;
   visionMaxPredictedCurvature @60 :Float32;
+  visionPredictedPathSource @61 :VisionPredictedPathSource;
 
   speedLimitControlState @37 :SpeedLimitControlState; 
   speedLimit @38 :Float32;
@@ -905,6 +906,13 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
     entering @1; # A subsantial turn is predicted ahead, adapting speed to turn confort levels.
     turning @2; # Actively turning. Managing acceleration to provide a roll on turn feeling.
     leaving @3; # Road ahead straightens. Start to allow positive acceleration.
+  }
+
+  enum VisionPredictedPathSource {
+    lanelines @0; # When the probability of lanes is good enough, compute polynomial from lanes as they are way more stable on current mode than driving path.
+    pathWithLanes @1; # If not polynomial derived from lanes, then derive it from compensated driving path with lanes as provided by `lateralPlanner`.
+    modelPosition @2; # Use path curvature otherwise
+    none @3; # If no polynomial derived from lanes or driving path, then provide a straight line poly.
   }
 }
 
