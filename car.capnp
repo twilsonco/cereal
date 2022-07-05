@@ -178,6 +178,10 @@ struct CarState {
   hvbVoltage @51 :Float32; # high voltage battery voltage ev's only
   hvbCurrent @52 :Float32;
   hvbWattage @53 :Float32;
+
+  lateralAcceleration @54 :Float32;
+  yawRate @55 :Float32;
+  yawRate2 @56 :Float32;
   
   # steering wheel
   steeringAngleDeg @7 :Float32;
