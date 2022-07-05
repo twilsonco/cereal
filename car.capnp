@@ -180,8 +180,7 @@ struct CarState {
   hvbWattage @53 :Float32;
 
   lateralAcceleration @54 :Float32;
-  yawRate @55 :Float32;
-  yawRate2 @56 :Float32;
+  yawRate2 @55 :Float32;
   
   # steering wheel
   steeringAngleDeg @7 :Float32;
