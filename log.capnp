@@ -906,15 +906,15 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   }
 
   struct DynamicFollowState {
-    pointsCurrent @62 :Float32;
-    newLead @63 :Bool;
-    leadGone @64 :Bool;
-    penaltyDist @65 :Float32;
-    penaltyVel @66 :Float32;
-    penaltyTime @67 :Float32;
-    penalty @68 :Float32;
-    lastCutinFactor @69 :Float32;
-    rescindedPenalty @70 :Float32;
+    pointsCurrent @0 :Float32;
+    newLead @1 :Bool;
+    leadGone @2 :Bool;
+    penaltyDist @3 :Float32;
+    penaltyVel @4 :Float32;
+    penaltyTime @5 :Float32;
+    penalty @6 :Float32;
+    lastCutinFactor @7 :Float32;
+    rescindedPenalty @8 :Float32;
   }
 
   enum SpeedLimitControlState {
