@@ -846,6 +846,9 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   visionMaxPredictedCurvature @60 :Float32;
   visionPredictedPathSource @61 :VisionPredictedPathSource;
 
+  dynamicFollowState0 @62 :DynamicFollowState;
+  dynamicFollowState1 @63 :DynamicFollowState;
+
   speedLimitControlState @37 :SpeedLimitControlState; 
   speedLimit @38 :Float32;
   speedLimitOffset @39 :Float32;
@@ -900,6 +903,18 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   struct GpsTrajectory {
     x @0 :List(Float32);
     y @1 :List(Float32);
+  }
+
+  struct DynamicFollowState {
+    pointsCurrent @62 :Float32;
+    newLead @63 :Bool;
+    leadGone @64 :Bool;
+    penaltyDist @65 :Float32;
+    penaltyVel @66 :Float32;
+    penaltyTime @67 :Float32;
+    penalty @68 :Float32;
+    lastCutinFactor @69 :Float32;
+    rescindedPenalty @70 :Float32;
   }
 
   enum SpeedLimitControlState {
