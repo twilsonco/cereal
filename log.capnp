@@ -611,6 +611,9 @@ struct ControlsState @0x97ff69c53601abf1 {
     f @7 :Float32;
     output @8 :Float32;
     saturated @9 :Bool;
+    kp @10 :Float32;
+    ki @11 :Float32;
+    kd @12 :Float32;
    }
 
   struct LateralTorqueState {
@@ -625,6 +628,9 @@ struct ControlsState @0x97ff69c53601abf1 {
     saturated @7 :Bool;
     currentLateralAcceleration @9 :Float32;
     desiredLateralAcceleration @10 :Float32;
+    kp @11 :Float32;
+    ki @12 :Float32;
+    kd @13 :Float32;
    }
 
   struct LateralLQRState {
