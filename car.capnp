@@ -123,6 +123,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     stoppedWaitForGas @114;
     buttonMainCancel @115;
     signalLost @116;
+    signalRestored @117;
 
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
