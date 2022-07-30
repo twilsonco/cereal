@@ -969,6 +969,8 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
   laneWidthMeanRightAdjacent @35 :Float32;
   shoulderMeanWidthLeft @36 :Float32;
   shoulderMeanWidthRight @37 :Float32;
+  laneProbs @39 :List(Float32);
+  roadEdgeProbs @40 :List(Float32);
 
   enum LanePosition {
     center @0;
