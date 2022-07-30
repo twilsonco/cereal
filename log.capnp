@@ -954,13 +954,27 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
   laneChangeState @18 :LaneChangeState;
   laneChangeDirection @19 :LaneChangeDirection;
 
-
   # desired curvatures over next 2.5s in rad/m
   psis @26 :List(Float32);
   curvatures @27 :List(Float32);
   curvatureRates @28 :List(Float32);
   
   lanelessMode @31 :Bool;
+
+  autoLanePositionActive @32 :Bool;
+  lanePosition @33 :LanePosition;
+  laneOffset @38 :Float32;
+
+  laneWidthMeanLeftAdjacent @34 :Float32;
+  laneWidthMeanRightAdjacent @35 :Float32;
+  shoulderMeanWidthLeft @36 :Float32;
+  shoulderMeanWidthRight @37 :Float32;
+
+  enum LanePosition {
+    center @0;
+    left @1;
+    right @2;
+  }
 
   enum Desire {
     none @0;
