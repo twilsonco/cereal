@@ -338,6 +338,13 @@ struct CarControl {
   cruiseControl @4 :CruiseControl;
   hudControl @5 :HUDControl;
 
+  onePedalAccelOutput @10 :Float32;
+  onePedalAccelInput @11 :Float32;
+  onePedalP @12 :Float32;
+  onePedalI @13 :Float32;
+  onePedalD @14 :Float32;
+  onePedalF @15 :Float32;
+
   struct Actuators {
     # range from 0.0 - 1.0
     gasDEPRECATED @0: Float32;
