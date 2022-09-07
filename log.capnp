@@ -479,9 +479,25 @@ struct RadarState @0x9a185389d6fdd05f {
     aLeadTau @12 :Float32;
     modelProb @13 :Float32;
     radar @14 :Bool;
+    source @15 :LeadDataSource;
+    checkSource @16 :LeadCheckSource;
 
     aLeadDEPRECATED @5 :Float32;
   }
+
+  enum LeadDataSource {
+    radar @0;
+    vision @1;
+    model @2;
+  }
+
+  enum LeadCheckSource {
+    modelLead @0;
+    modelPath @1;
+    modelLaneLines @2;
+    lowSpeedOverride @3;
+  }
+
 
   # deprecated
   ftMonoTimeDEPRECATED @7 :UInt64;
