@@ -181,6 +181,13 @@ struct CarState {
   hvbCurrent @52 :Float32;
   hvbWattage @53 :Float32;
 
+  dragForce @56 :Float32;
+  dragPower @57 :Float32;
+  accelForce @58 :Float32;
+  accelPower @59 :Float32;
+  drivePower @60 :Float32;
+  icePower @61 :Float32;
+
   lateralAcceleration @54 :Float32;
   yawRate2 @55 :Float32;
   
