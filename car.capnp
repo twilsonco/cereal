@@ -358,6 +358,10 @@ struct CarControl {
   onePedalI @13 :Float32;
   onePedalD @14 :Float32;
   onePedalF @15 :Float32;
+  onePedalLeadStopDistance @16 :Float32;
+  onePedalStopDistance @16 :Float32;
+  onePedalStopAccel @16 :Float32;
+
 
   struct Actuators {
     # range from 0.0 - 1.0
