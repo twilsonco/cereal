@@ -993,6 +993,16 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
   laneProbs @39 :List(Float32);
   roadEdgeProbs @40 :List(Float32);
 
+  trafficLeft @41 :LaneTraffic;
+  trafficRight @42 :LaneTraffic;
+  
+
+  enum LaneTraffic {
+    none @0;
+    oncoming @1;
+    ongoing @2;
+  }
+
   enum LanePosition {
     center @0;
     left @1;
