@@ -360,9 +360,6 @@ struct CarControl {
   onePedalI @13 :Float32;
   onePedalD @14 :Float32;
   onePedalF @15 :Float32;
-  onePedalLeadStopDistance @16 :Float32;
-  onePedalStopDistance @17 :Float32;
-  onePedalStopAccel @18 :Float32;
 
 
   struct Actuators {
