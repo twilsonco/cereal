@@ -995,7 +995,21 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
 
   trafficLeft @41 :LaneTraffic;
   trafficRight @42 :LaneTraffic;
+
+  laneChangeAlert @43 :LaneChangeAlert;
+  laneChangeCountdown @44 :Float32;
   
+  enum LaneChangeAlert {
+    none @0;
+    nudgelessBlockedNoLane @1;
+    nudgelessBlockedOncoming @2;
+    nudgelessBlockedTimeout @3;
+    nudgelessBlockedMinSpeed @4;
+    nudgelessBlockedOnePedal @5;
+    nudgelessCountdown @6;
+    nudgeWarningNoLane @7;
+    nudgeWarningOncoming @8;
+  }
 
   enum LaneTraffic {
     none @0;
