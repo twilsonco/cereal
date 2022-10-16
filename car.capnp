@@ -196,6 +196,7 @@ struct CarState {
   evPower @68 :Float32;
   rollingForce @69 :Float32;
   rollingPower @70 :Float32;
+  pitchPower @71 :Float32;
 
   lateralAcceleration @54 :Float32;
   yawRate2 @55 :Float32;
