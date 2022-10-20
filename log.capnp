@@ -461,6 +461,7 @@ struct RadarState @0x9a185389d6fdd05f {
   radarErrors @12 :List(Car.RadarData.Error);
 
   leadOne @3 :LeadData;
+  leadOnePlus @16 :LeadData;
   leadTwo @4 :LeadData;
   leadsLeft @13 :List(LeadData);
   leadsCenter @14 :List(LeadData);
