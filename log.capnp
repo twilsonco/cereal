@@ -892,6 +892,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
     turn @5;
     limit @6;
     turnlimit @7;
+    lead0p1 @8;
   }
 
   # deprecated
