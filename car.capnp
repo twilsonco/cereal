@@ -312,6 +312,7 @@ struct CarState {
 struct RadarData @0x888ad6581cf0aacb {
   errors @0 :List(Error);
   points @1 :List(RadarPoint);
+  errorStrs @3 :List(Text);
 
   # which packets this state came from
   canMonoTimes @2 :List(UInt64);

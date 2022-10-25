@@ -459,6 +459,7 @@ struct RadarState @0x9a185389d6fdd05f {
   mdMonoTime @6 :UInt64;
   carStateMonoTime @11 :UInt64;
   radarErrors @12 :List(Car.RadarData.Error);
+  radarErrorStrs @17 :List(Text);
 
   leadOne @3 :LeadData;
   leadOnePlus @16 :LeadData;
