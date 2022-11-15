@@ -998,6 +998,10 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
 
   trafficLeft @41 :LaneTraffic;
   trafficRight @42 :LaneTraffic;
+  trafficCountLeft @45 :Int32;
+  trafficCountRight @45 :Int32;
+  trafficMinSeperationLeft @46 :Float32;
+  trafficMinSeperationRight @47 :Float32;
 
   laneChangeAlert @43 :LaneChangeAlert;
   laneChangeCountdown @44 :Float32;
