@@ -940,6 +940,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
     penalty @6 :Float32;
     lastCutinFactor @7 :Float32;
     rescindedPenalty @8 :Float32;
+    penaltyTraffic @9 :Float32;
   }
 
   enum SpeedLimitControlState {
