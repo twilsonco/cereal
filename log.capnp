@@ -993,6 +993,7 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
   autoLanePositionActive @32 :Bool;
   lanePosition @33 :LanePosition;
   laneOffset @38 :Float32;
+  laneDistFromCenter @49 :Float32;
 
   laneWidthMeanLeftAdjacent @34 :Float32;
   laneWidthMeanRightAdjacent @35 :Float32;
