@@ -125,6 +125,12 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     signalLost @116;
     signalRestored @117;
 
+    manualSteeringRequired @118;
+    silentPedalPressed @119;
+    silentButtonEnable @120;
+    silentBrakeHold @121;
+    silentWrongGear @122;
+
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
     radarCommIssueDEPRECATED @67;
@@ -236,9 +242,13 @@ struct CarState {
 
   # clutch (manual transmission only)
   clutchPressed @28 :Bool;
+
+  accMainEnabled @72 :Bool;
+  disengageByBrake @73 :Bool;
+  accEnabled @74 :Bool;
   
   readdistancelines @40 :Float32;
-  lkMode @41 :Bool;
+  lkaEnabled @41 :Bool;
   engineRPM @42 :Float32;
   engineCoolantTemp @50 :Int64;
 
