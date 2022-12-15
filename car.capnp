@@ -176,8 +176,8 @@ struct CarState {
   frictionBrakePercent @44 :Int64; # amount of brake being applied by OP
   
   onePedalModeActive @45 :Bool; # to change max speed to one-peda icon
-  onePedalBrakeMode @46 :Int64; # level of braking applied affects color of one-pedal icon
-  coastOnePedalModeActive @47 :Bool; # level of braking applied affects color of one-pedal icon
+  onePedalBrakeModeDEPRECATED @46 :Int64; # level of braking applied affects color of one-pedal icon
+  onePedalModeTemporary @47 :Bool; # level of braking applied affects color of one-pedal icon
   coastingActive @48 :Bool; # show "+" on max speed when coasting active
   pitch @49 :Float32; # vehicle pitch in radians
   
