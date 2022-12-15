@@ -127,9 +127,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
 
     manualSteeringRequired @118;
     silentPedalPressed @119;
-    silentButtonEnable @120;
-    silentBrakeHold @121;
-    silentWrongGear @122;
+    silentWrongGear @120;
 
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
@@ -243,9 +241,7 @@ struct CarState {
   # clutch (manual transmission only)
   clutchPressed @28 :Bool;
 
-  accMainEnabled @72 :Bool;
-  disengageByBrake @73 :Bool;
-  accEnabled @74 :Bool;
+  disengageByBrake @72 :Bool;
   
   readdistancelines @40 :Float32;
   lkaEnabled @41 :Bool;
