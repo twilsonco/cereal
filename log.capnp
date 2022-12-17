@@ -554,7 +554,7 @@ struct ControlsState @0x97ff69c53601abf1 {
   enabled @19 :Bool;
   active @36 :Bool;
   latActive @64 :Bool;
-  MADSEnabled @65 :Bool;
+  madsEnabled @65 :Bool;
 
   longControlState @30 :Car.CarControl.Actuators.LongControlState;
   vPid @2 :Float32;
