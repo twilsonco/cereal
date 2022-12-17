@@ -174,6 +174,8 @@ struct CarState {
   brake @5 :Float32;      # this is user pedal only
   brakePressed @6 :Bool;  # this is user pedal only
   frictionBrakePercent @44 :Int64; # amount of brake being applied by OP
+
+  cruiseMain @72 :Bool;
   
   onePedalModeActive @45 :Bool; # to change max speed to one-peda icon
   onePedalBrakeModeDEPRECATED @46 :Int64; # level of braking applied affects color of one-pedal icon
