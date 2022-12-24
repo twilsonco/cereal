@@ -201,9 +201,9 @@ struct SensorEventData {
     pressure @9 :SensorVec;
     magneticUncalibrated @11 :SensorVec;
     gyroUncalibrated @12 :SensorVec;
-    proximity @13: Float32;
-    light @14: Float32;
-    temperature @15: Float32;
+    proximity @13 :Float32;
+    light @14 :Float32;
+    temperature @15 :Float32;
   }
   source @8 :SensorSource;
 
@@ -1087,29 +1087,29 @@ struct LiveLocationKalman {
   # More info on reference frames:
   # https://github.com/commaai/openpilot/tree/master/common/transformations
 
-  positionECEF @0 : Measurement;
-  positionGeodetic @1 : Measurement;
-  velocityECEF @2 : Measurement;
-  velocityNED @3 : Measurement;
-  velocityDevice @4 : Measurement;
-  accelerationDevice @5: Measurement;
+  positionECEF @0 :Measurement;
+  positionGeodetic @1 :Measurement;
+  velocityECEF @2 :Measurement;
+  velocityNED @3 :Measurement;
+  velocityDevice @4 :Measurement;
+  accelerationDevice @5:Measurement;
 
 
   # These angles are all eulers and roll, pitch, yaw
   # orientationECEF transforms to rot matrix: ecef_from_device
-  orientationECEF @6 : Measurement;
-  calibratedOrientationECEF @20 : Measurement;
-  orientationNED @7 : Measurement;
-  angularVelocityDevice @8 : Measurement;
+  orientationECEF @6 :Measurement;
+  calibratedOrientationECEF @20 :Measurement;
+  orientationNED @7 :Measurement;
+  angularVelocityDevice @8 :Measurement;
 
   # orientationNEDCalibrated transforms to rot matrix: NED_from_calibrated
-  calibratedOrientationNED @9 : Measurement;
+  calibratedOrientationNED @9 :Measurement;
 
   # Calibrated frame is simply device frame
   # aligned with the vehicle
-  velocityCalibrated @10 : Measurement;
-  accelerationCalibrated @11 : Measurement;
-  angularVelocityCalibrated @12 : Measurement;
+  velocityCalibrated @10 :Measurement;
+  accelerationCalibrated @11 :Measurement;
+  angularVelocityCalibrated @12 :Measurement;
 
   gpsWeek @13 :Int32;
   gpsTimeOfWeek @14 :Float64;
@@ -1130,9 +1130,9 @@ struct LiveLocationKalman {
   }
 
   struct Measurement {
-    value @0 : List(Float64);
-    std @1 : List(Float64);
-    valid @2 : Bool;
+    value @0 :List(Float64);
+    std @1 :List(Float64);
+    valid @2 :Bool;
   }
 }
 
@@ -1395,8 +1395,8 @@ struct LiveLongitudinalMpcData {
 
 struct Joystick {
   # convenient for debug and live tuning
-  axes @0: List(Float32);
-  buttons @1: List(Bool);
+  axes @0 :List(Float32);
+  buttons @1 :List(Bool);
 }
 
 struct DriverState {
@@ -1501,7 +1501,7 @@ struct LiveMapDataDEPRECATED {
   wayId @4 :UInt64;
   roadX @5 :List(Float32);
   roadY @6 :List(Float32);
-  lastGps @7: GpsLocationData;
+  lastGps @7 :GpsLocationData;
   roadCurvatureX @8 :List(Float32);
   roadCurvature @9 :List(Float32);
   distToTurn @10 :Float32;
@@ -1524,6 +1524,32 @@ struct LiveMapData {
   lastGpsTimestamp @12 :Int64;  # Milliseconds since January 1, 1970.
   currentRoadName @13 :Text;
   currentRoadType @14 :Int16;
+}
+
+struct LiveWeatherData {
+  valid @0 :Bool;
+  main @1 :Text;
+  weatherID @2 :Int32; # city id
+  description @3 :Text;
+  icon @4 :Text; # https://openweathermap.org/weather-conditions
+  temperature @5 :Float32; # [°C]
+  temperatureFeelsLike @6 :Float32; # [°C]
+  pressure @7 :Int32; # [hPa]
+  humidity @8 :Int16; # [%]
+  visibility @9 :Int32; # [m]
+  windSpeed @10 :Float32; # [m/s]
+  windDirectionDeg @11 :Int16; # [deg]
+  windSpeedGust @12 :Float32; # [m/s]
+  cityName @13 :Text;
+  cloudsPercent @14 :Int16;
+  rain1Hour @15 :Float32; # [mm]
+  rain3Hour @16 :Float32; # [mm]
+  snow1Hour @17 :Float32; # [mm]
+  snow3Hour @18 :Float32; # [mm]
+  timeCurrent @19 :Int64; # unix, UTC
+  timeZone @20 :Int64; # shift in seconds from UTC
+  timeSunrise @21 :Int64; # unix, UTC
+  timeSunset @22 :Int64; # unix, UTC
 }
 
 struct CameraOdometry {
@@ -1601,18 +1627,19 @@ struct Event {
     driverState @59 :DriverState;
     liveParameters @61 :LiveParametersData;
     cameraOdometry @63 :CameraOdometry;
-    thumbnail @66: Thumbnail;
-    carEvents @68: List(Car.CarEvent);
-    carParams @69: Car.CarParams;
-    driverMonitoringState @71: DriverMonitoringState;
+    thumbnail @66 :Thumbnail;
+    carEvents @68 :List(Car.CarEvent);
+    carParams @69 :Car.CarParams;
+    driverMonitoringState @71 :DriverMonitoringState;
     liveLocationKalman @72 :LiveLocationKalman;
     modelV2 @75 :ModelDataV2;
-    liveMapData @80: LiveMapData;
+    liveMapData @80 :LiveMapData;
+    liveWeatherData @81 :LiveWeatherData;
 
     # camera stuff, each camera state has a matching encode idx
     roadCameraState @2 :FrameData;
-    driverCameraState @70: FrameData;
-    wideRoadCameraState @74: FrameData;
+    driverCameraState @70 :FrameData;
+    wideRoadCameraState @74 :FrameData;
     roadEncodeIdx @15 :EncodeIndex;
     driverEncodeIdx @76 :EncodeIndex;
     wideRoadEncodeIdx @77 :EncodeIndex;
