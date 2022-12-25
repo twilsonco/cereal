@@ -136,6 +136,9 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     madsAlert5 @125;
     madsAlert6 @126;
 
+    slipperyRoadsActivated @127;
+    lowVisibilityActivated @128;
+
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
     radarCommIssueDEPRECATED @67;
