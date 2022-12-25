@@ -62,6 +62,7 @@ services = {
   "managerState": (True, 2., 1),
   "uploaderState": (True, 0., 1),
   "liveMapData": (True, 0.),
+  "liveWeatherData": (True, 0.),
 
   # debug
   "testJoystick": (False, 0.),
