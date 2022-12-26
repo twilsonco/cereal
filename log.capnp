@@ -597,6 +597,15 @@ struct ControlsState @0x97ff69c53601abf1 {
   interventionCountSession @74 :Int32;
   distractionCountTotal @75 :Int32;
   distractionCountSession @76 :Int32;
+  interactionDistance @77 :Float32;
+  interventionDistance @78 :Float32;
+  engagedDistance @79 :Float32;
+  engagedDistanceSession @80 :Float32;
+  engagedDistanceTotal @81 :Float32;
+  distanceTraveledSession @82 :Float32;
+  distanceTraveledTotal @83 :Float32;
+  distractionDistance @84 :Float32;
+
 
   lateralControlState :union {
     indiState @52 :LateralINDIState;
