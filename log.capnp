@@ -584,6 +584,20 @@ struct ControlsState @0x97ff69c53601abf1 {
   interventionTimer @62 :Int32;
   distractionTimer @63 :Int32;
 
+  carRunningTimerTotal @64 :Int64;
+  carRunningTimerSession @65 :Int32;
+  openpilotLongControlTimerTotal @66 :Int64;
+  openpilotLongControlTimerSession @67 :Int32;
+  disengagementTimer @68 :Int32;
+  disengagementCountTotal @69 :Int32;
+  disengagementCountSession @70 :Int32;
+  interactionCountTotal @71 :Int32;
+  interactionCountSession @72 :Int32;
+  interventionCountTotal @73 :Int32;
+  interventionCountSession @74 :Int32;
+  distractionCountTotal @75 :Int32;
+  distractionCountSession @76 :Int32;
+
   lateralControlState :union {
     indiState @52 :LateralINDIState;
     pidState @53 :LateralPIDState;
