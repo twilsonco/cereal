@@ -584,8 +584,8 @@ struct ControlsState @0x97ff69c53601abf1 {
   interventionTimer @62 :Int32;
   distractionTimer @63 :Int32;
 
-  carRunningTimerTotal @64 :Int64;
-  carRunningTimerSession @65 :Int32;
+  carRunningTimerTotal @85 :Int64;
+  carRunningTimerSession @86 :Int32;
   openpilotLongControlTimerTotal @66 :Int64;
   openpilotLongControlTimerSession @67 :Int32;
   disengagementTimer @68 :Int32;
