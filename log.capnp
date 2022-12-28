@@ -605,6 +605,10 @@ struct ControlsState @0x97ff69c53601abf1 {
   distanceTraveledSession @82 :Float32;
   distanceTraveledTotal @83 :Float32;
   distractionDistance @84 :Float32;
+  percentEngagedTimeSession @87 :Float32;
+  percentEngagedTimeTotal @88 :Float32;
+  percentEngagedDistanceSession @89 :Float32;
+  percentEngagedDistanceTotal @90 :Float32;
 
 
   lateralControlState :union {
