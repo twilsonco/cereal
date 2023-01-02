@@ -653,6 +653,8 @@ struct ControlsState @0x97ff69c53601abf1 {
     delta @8 :Float32;
     output @9 :Float32;
     saturated @10 :Bool;
+    steeringAngleDesiredDeg @11 :Float32;
+    steeringRateDesiredDeg @12 :Float32;
   }
 
   struct LateralPIDState {
