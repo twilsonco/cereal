@@ -1047,7 +1047,7 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
     nudgelessBlockedOncoming @2;
     nudgelessBlockedTimeout @3;
     nudgelessBlockedMinSpeed @4;
-    nudgelessBlockedOnePedal @5;
+    nudgelessBlockedMADS @5;
     nudgelessCountdown @6;
     nudgeWarningNoLane @7;
     nudgeWarningOncoming @8;
