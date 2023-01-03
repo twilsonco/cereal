@@ -628,6 +628,7 @@ struct CarParams {
     l @7 :List(Float32);  # Kalman gain
 
     friction @8 :Float32;
+    useSteeringAngle @9 :Bool;
   }
 
   enum SafetyModel {
