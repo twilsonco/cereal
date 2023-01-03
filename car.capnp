@@ -599,6 +599,7 @@ struct CarParams {
     actuatorEffectivenessBP @6 :List(Float32);
     actuatorEffectivenessV @7 :List(Float32);
     kf @8 :Float32;
+    friction @9 :Float32;
   }
 
   struct LateralLQRTuning {
