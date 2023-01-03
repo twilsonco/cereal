@@ -619,8 +619,8 @@ struct ControlsState @0x97ff69c53601abf1 {
     angleState @58 :LateralAngleState;
     debugState @59 :LateralDebugState;
     torqueState @60 :LateralTorqueState;
-    torqueIndiState @60 :LateralTorqueINDIState;
-    torqueLqrState @60 :LateralTorqueLQRState;
+    torqueIndiState @92 :LateralTorqueINDIState;
+    torqueLqrState @93 :LateralTorqueLQRState;
   }
 
   enum OpenpilotState @0xdbe58b96d2d1ac61 {
