@@ -598,6 +598,7 @@ struct CarParams {
     timeConstantV @5 :List(Float32);
     actuatorEffectivenessBP @6 :List(Float32);
     actuatorEffectivenessV @7 :List(Float32);
+    kf @8 :Float32;
   }
 
   struct LateralLQRTuning {
@@ -629,6 +630,7 @@ struct CarParams {
 
     friction @8 :Float32;
     useSteeringAngle @9 :Bool;
+    kf @10 :Float32;
   }
 
   enum SafetyModel {
