@@ -503,6 +503,8 @@ struct CarParams {
     indi @27 :LateralINDITuning;
     lqr @40 :LateralLQRTuning;
     torque @61 :LateralTorqueTuning;
+    torqueIndi @62 :LateralTorqueINDITuning;
+    torqueLqr @63 :LateralTorqueLQRTuning;
   }
 
   steerLimitAlert @28 :Bool;
@@ -587,6 +589,17 @@ struct CarParams {
     actuatorEffectivenessDEPRECATED @3 :Float32;
   }
 
+  struct LateralTorqueINDITuning {
+    outerLoopGainBP @0 :List(Float32);
+    outerLoopGainV @1 :List(Float32);
+    innerLoopGainBP @2 :List(Float32);
+    innerLoopGainV @3 :List(Float32);
+    timeConstantBP @4 :List(Float32);
+    timeConstantV @5 :List(Float32);
+    actuatorEffectivenessBP @6 :List(Float32);
+    actuatorEffectivenessV @7 :List(Float32);
+  }
+
   struct LateralLQRTuning {
     scale @0 :Float32;
     ki @1 :Float32;
@@ -599,6 +612,22 @@ struct CarParams {
 
     k @6 :List(Float32);  # LQR gain
     l @7 :List(Float32);  # Kalman gain
+  }
+
+  struct LateralTorqueLQRTuning {
+    scale @0 :Float32;
+    ki @1 :Float32;
+    dcGain @2 :Float32;
+
+    # State space system
+    a @3 :List(Float32);
+    b @4 :List(Float32);
+    c @5 :List(Float32);
+
+    k @6 :List(Float32);  # LQR gain
+    l @7 :List(Float32);  # Kalman gain
+
+    friction @8 :Float32;
   }
 
   enum SafetyModel {

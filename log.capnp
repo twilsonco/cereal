@@ -619,6 +619,8 @@ struct ControlsState @0x97ff69c53601abf1 {
     angleState @58 :LateralAngleState;
     debugState @59 :LateralDebugState;
     torqueState @60 :LateralTorqueState;
+    torqueIndiState @60 :LateralTorqueINDIState;
+    torqueLqrState @60 :LateralTorqueLQRState;
   }
 
   enum OpenpilotState @0xdbe58b96d2d1ac61 {
@@ -657,6 +659,22 @@ struct ControlsState @0x97ff69c53601abf1 {
     steeringRateDesiredDeg @12 :Float32;
   }
 
+  struct LateralTorqueINDIState {
+    active @0 :Bool;
+    actualLateralAccel @1 :Float32;
+    actualLateralJerk @2 :Float32;
+    actualLateralJounce @3 :Float32;
+    rateSetPoint @4 :Float32;
+    accelSetPoint @5 :Float32;
+    accelError @6 :Float32;
+    delayedOutput @7 :Float32;
+    delta @8 :Float32;
+    output @9 :Float32;
+    saturated @10 :Bool;
+    lateralAccelerationDesired @11 :Float32;
+    lateralJerkDesired @12 :Float32;
+  }
+
   struct LateralPIDState {
     active @0 :Bool;
     steeringAngleDeg @1 :Float32;
@@ -693,6 +711,15 @@ struct ControlsState @0x97ff69c53601abf1 {
   struct LateralLQRState {
     active @0 :Bool;
     steeringAngleDeg @1 :Float32;
+    i @2 :Float32;
+    output @3 :Float32;
+    lqrOutput @4 :Float32;
+    saturated @5 :Bool;
+  }
+
+  struct LateralTorqueLQRState {
+    active @0 :Bool;
+    lateralAcceleration @1 :Float32;
     i @2 :Float32;
     output @3 :Float32;
     lqrOutput @4 :Float32;
