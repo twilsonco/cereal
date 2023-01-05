@@ -139,6 +139,8 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     slipperyRoadsActivated @127;
     lowVisibilityActivated @128;
 
+    rebootImminent @129;
+
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
     radarCommIssueDEPRECATED @67;
@@ -217,6 +219,8 @@ struct CarState {
   rollingForce @69 :Float32;
   rollingPower @70 :Float32;
   pitchPower @71 :Float32;
+
+  rebootInNSeconds @76 :Int32;
 
   lateralAcceleration @54 :Float32;
   yawRate2 @55 :Float32;
