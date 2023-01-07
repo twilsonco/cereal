@@ -570,7 +570,7 @@ struct ControlsState @0x97ff69c53601abf1 {
 
   applyGas @94 :Int32;
   applyBrake @95 :Int32;
-  brakesAllowed @96 :Int32;
+  brakesAllowed @96 :Bool;
 
   # UI alerts
   alertText1 @24 :Text;
