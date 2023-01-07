@@ -569,7 +569,8 @@ struct ControlsState @0x97ff69c53601abf1 {
   forceDecel @51 :Bool;
 
   applyGas @94 :Int32;
-  applyBrake @95 :Int32;
+  applyBrakeIn @98 :Int32;
+  applyBrakeOut @95 :Int32;
   brakesAllowed @96 :Bool;
   applySteer @97 :Int32;
 
