@@ -678,6 +678,9 @@ struct ControlsState @0x97ff69c53601abf1 {
     saturated @10 :Bool;
     lateralAccelerationDesired @11 :Float32;
     lateralJerkDesired @12 :Float32;
+    f @13 :Float32;
+    friction @14 :Float32;
+    rollCompensation @15 :Float32;
   }
 
   struct LateralPIDState {
@@ -729,6 +732,9 @@ struct ControlsState @0x97ff69c53601abf1 {
     output @3 :Float32;
     lqrOutput @4 :Float32;
     saturated @5 :Bool;
+    f @6 :Float32;
+    friction @7 :Float32;
+    rollCompensation @8 :Float32;
   }
 
   struct LateralAngleState {
