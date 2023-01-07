@@ -186,6 +186,7 @@ struct CarState {
   brake @5 :Float32;      # this is user pedal only
   brakePressed @6 :Bool;  # this is user pedal only
   frictionBrakePercent @44 :Int64; # amount of brake being applied by OP
+  brakePressure @77 :Float32;
 
   cruiseMain @72 :Bool;
 
