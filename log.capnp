@@ -568,6 +568,9 @@ struct ControlsState @0x97ff69c53601abf1 {
   curvature @37 :Float32;  # path curvature from vehicle model
   forceDecel @51 :Bool;
 
+  applyGas @94 :Int32;
+  applyBrake @95 :Int32;
+
   # UI alerts
   alertText1 @24 :Text;
   alertText2 @25 :Text;
