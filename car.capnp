@@ -136,6 +136,15 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     madsAlert5 @125;
     madsAlert6 @126;
 
+    madsLeadBrakingEnabled @130;
+    madsLeadBrakingDisabled @131;
+    madsOnePedalEnabled @132;
+    madsOnePedalDisabled @133;
+    madsAutosteerEnabled @136;
+    madsAutosteerDisabled @137;
+    madsEnabled @134;
+    madsDisabled @135;
+
     slipperyRoadsActivated @127;
     lowVisibilityActivated @128;
 
