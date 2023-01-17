@@ -187,6 +187,7 @@ struct CarState {
   yawRate @22 :Float32;     # best estimate of yaw rate
   standstill @18 :Bool;
   wheelSpeeds @2 :WheelSpeeds;
+  clusterSpeed @79 :Int32;
 
   # gas pedal, 0.0-1.0
   gas @3 :Float32;        # this is user + computer
