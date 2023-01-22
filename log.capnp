@@ -949,6 +949,8 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   antiStopDistanceBuffer1 @66 :Float32;
   antiStopState0 @67 :AntiStopControlState;
   antiStopState1 @68 :AntiStopControlState;
+  antiStopMaxDistance0 @69 :Float32;
+  antiStopMaxDistance1 @70 :Float32;
 
   dynamicFollowState0 @62 :DynamicFollowState;
   dynamicFollowState1 @63 :DynamicFollowState;
