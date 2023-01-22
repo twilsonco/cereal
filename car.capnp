@@ -205,6 +205,8 @@ struct CarState {
   slipperyRoadsActive @74 :Bool;
   lowVisibilityActive @75 :Bool;
   
+  antiStopEnabled @80 :Bool;
+
   madsLeadBrakingActive @73 :Bool; # to color MADS icon
   onePedalModeActive @45 :Bool; # to change max speed to one-peda icon
   onePedalBrakeModeDEPRECATED @46 :Int64; # level of braking applied affects color of one-pedal icon

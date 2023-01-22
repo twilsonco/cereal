@@ -945,6 +945,11 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
   visionPredictedPathSource @61 :VisionPredictedPathSource;
   visionVf @64 :Float32;
 
+  antiStopDistanceBuffer0 @65 :Float32;
+  antiStopDistanceBuffer1 @66 :Float32;
+  antiStopState0 @67 :AntiStopControlState;
+  antiStopState1 @68 :AntiStopControlState;
+
   dynamicFollowState0 @62 :DynamicFollowState;
   dynamicFollowState1 @63 :DynamicFollowState;
 
@@ -1016,6 +1021,13 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
     lastCutinFactor @7 :Float32;
     rescindedPenalty @8 :Float32;
     penaltyTraffic @9 :Float32;
+  }
+
+  enum AntiStopControlState {
+    inactive @0; # No lead
+    distancing @1; # there is a lead and extra stop distance > 0.0
+    creeping @2; # there is lead and we're decreasing stop distance to creep
+    stopped @3; # we've exhausted our extra stop distance and are done creeping
   }
 
   enum SpeedLimitControlState {
