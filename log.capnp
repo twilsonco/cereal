@@ -1030,6 +1030,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
     distancing @1; # there is a lead and extra stop distance > 0.0
     creeping @2; # there is lead and we're decreasing stop distance to creep
     stopped @3; # we've exhausted our extra stop distance and are done creeping
+    aborted @4; # user gassed during active state to abort
   }
 
   enum SpeedLimitControlState {
