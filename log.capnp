@@ -1027,6 +1027,7 @@ struct LongitudinalPlan @0xe00b5b3eba12876c {
     maxDistance @2 :Float32;
     vStop @3 :Float32;
     timeBuffer @4 :Float32;
+    aStop @5 :Float32;
 
     enum AntiStopControlStatus {
       inactive @0; # No lead
