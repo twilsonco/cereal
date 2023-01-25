@@ -146,8 +146,6 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     madsEnabled @134;
     madsDisabled @135;
 
-    antiStopAlert @139;
-
     slipperyRoadsActivated @127;
     lowVisibilityActivated @128;
 
@@ -206,8 +204,6 @@ struct CarState {
 
   slipperyRoadsActive @74 :Bool;
   lowVisibilityActive @75 :Bool;
-  
-  antiStopEnabled @80 :Bool;
 
   madsLeadBrakingActive @73 :Bool; # to color MADS icon
   onePedalModeActive @45 :Bool; # to change max speed to one-peda icon
