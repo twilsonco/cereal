@@ -588,6 +588,7 @@ struct ControlsState @0x97ff69c53601abf1 {
   cumLagMs @15 :Float32;
   canErrorCounter @57 :UInt32;
 
+  parkedTimer @100 :Int32;
   interactionTimer @61 :Int32;
   interventionTimer @62 :Int32;
   distractionTimer @63 :Int32;
