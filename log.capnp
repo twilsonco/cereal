@@ -718,6 +718,7 @@ struct ControlsState @0x97ff69c53601abf1 {
     ki @12 :Float32;
     kd @13 :Float32;
     gainUpdateFactor @14 :Float32;
+    desiredLateralJerk @15 :Float32;
    }
 
   struct LateralLQRState {
