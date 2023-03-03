@@ -720,6 +720,8 @@ struct ControlsState @0x97ff69c53601abf1 {
     gainUpdateFactor @14 :Float32;
     desiredLateralJerk @15 :Float32;
     friction @16 :Float32;
+    latSnapFriction @17 :Float32;
+    desiredLateralSnap @18 :Float32;
    }
 
   struct LateralLQRState {
