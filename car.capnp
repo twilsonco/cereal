@@ -146,6 +146,8 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     madsEnabled @134;
     madsDisabled @135;
 
+    opParamsParamChanged @139;
+
     slipperyRoadsActivated @127;
     lowVisibilityActivated @128;
 
