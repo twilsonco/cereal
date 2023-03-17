@@ -722,6 +722,8 @@ struct ControlsState @0x97ff69c53601abf1 {
     friction @16 :Float32;
     steerAngleError @17 :Float32;
     currentLateralJerk @18 :Float32;
+    lookaheadCurvature @19 :Float32;
+    lookaheadCurvatureRate @20 :Float32;
    }
 
   struct LateralLQRState {
