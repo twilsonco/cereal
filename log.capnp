@@ -724,6 +724,9 @@ struct ControlsState @0x97ff69c53601abf1 {
     currentLateralJerk @18 :Float32;
     lookaheadCurvature @19 :Float32;
     lookaheadCurvatureRate @20 :Float32;
+    f2 @21 :Float32;
+    maxFutureLatAccel @22 :Float32;
+    errorScaleFactor @23 :Float32;
    }
 
   struct LateralLQRState {
