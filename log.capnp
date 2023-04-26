@@ -1056,6 +1056,7 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
   lProb @5 :Float32;
   rProb @7 :Float32;
   dPathPoints @20 :List(Float32);
+  dPathPointsFull @50 :List(Float32);
   dProb @21 :Float32;
   dPathWLinesX @29 :List(Float32);
   dPathWLinesY @30 :List(Float32);
