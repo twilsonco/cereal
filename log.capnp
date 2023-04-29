@@ -727,6 +727,7 @@ struct ControlsState @0x97ff69c53601abf1 {
     f2 @21 :Float32;
     maxFutureLatAccel @22 :Float32;
     errorScaleFactor @23 :Float32;
+    nnffInputVector @24 :List(Float32);
    }
 
   struct LateralLQRState {
